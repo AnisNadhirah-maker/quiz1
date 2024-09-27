@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <style>
+        :root {
+            --pink: #e84393;
+        }
+
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            outline: none; border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            scroll-padding-top: 6rem;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: #df54a2;
+            padding: 2rem 9%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0 .5rem 1rem rgba(255, 249, 249, 0.1);
+        }
+
+        header .logo {
+            font-size: 3rem;
+            color: #faf8f8;
+            font-weight: bolder;
+        }
+
+        header .logo span {
+            color: var(--pink);
+        }
+
+        header .nav a {
+            font-size: 2rem;
+            padding: 0 1rem;
+            color: #fdf6f6;
+            font-weight: bolder;
+
+        }
+
+        header .nav a:hover {
+            color: var(--pink);
+        }
+
+        .tourist {
+            padding: 10rem 9%;
+        }
+
+        .tourist .heading {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #8e5c74;
+        }
+
+        .row {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .image-container {
+            flex: 1;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="/quiz1" class="logo">tourist<span>.</span></a>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="profile.html">profile</a>
+        <a href="hometown.html">Hometown</a>
+        <a href="food.html">Food</a>
+        <a href="tourist.html">Tourist</a>
+    </nav>
+</header>
+
+<section class="tourist" id="tourist">
+    <h1 class="heading"><span>Tourist</span> Places</h1>
+    <div class="row">
+        <div class="image-container">
+            <img src="image/tourist.jpeg" alt="Tourist Attractions" width="500" height="auto">
+        </div>
+                
+        <div class="content">
+            <h3>Explore the Tourist Attractions!</h3>
+            <p>Kuala Terengganu is known for its amazing tourist spots, from the iconic Crystal Mosque to the serene Batu Buruk Beach.</p>
+            <p>You can dive into the cultural richness by visiting the Islamic Civilization Park or enjoy the beautiful coastal views that make this place a traveler’s paradise.</p>
+            <p>Whether you're looking for a cultural journey or a beach getaway, Kuala Terengganu offers unforgettable experiences for every kind of traveler.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
